@@ -4,41 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Портфолио</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- Шапка страницы -->
 <header class="header">
     <nav>
         <!-- The logo is always a link -->
-        <a lang="en" href="./index.html" class="logo">
+        <a class="logo" lang="en" href="./index.html" >
             <span class="">Web</span>Studio
         </a>
         <ul class="site-nav list">
-            <li><a class="link" href="">Студия</a></li>
-            <li><a class="link" href="">Портфолио</a></li>
-            <li><a class="link" href="">Контакты</a></li>
+            <li><a class="site-nav-link current" href="">Студия</a></li>
+            <li><a class="site-nav-link current" href="">Портфолио</a></li>
+            <li><a class="site-nav-link current" href="">Контакты</a></li>
         </ul>
     </nav>
     <ul class="auth-nav list">
-        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li><a class="auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="auth-nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
 </header>
 <!-- Уникальный контент страницы -->
-<main>
+<main class="main">
     <section>
         <!-- Спрятать комментарий 
         фильтр-->
         <h1>Наши проекты</h1>
-        <ul>
-            <li><button type="button">Все</button></li>
-            <li><button type="button">Веб-сайты</button></li>
-            <li><button type="button">Приложения</button></li>
-            <li><button type="button">Дизайн</button></li>
-            <li><button type="button">Маркетинг</button></li>
+        <ul class="filters list">
+            <li><button class="button" type="button">Все</button></li>
+            <li><button class="button" type="button">Веб-сайты</button></li>
+            <li><button class="button" type="button">Приложения</button></li>
+            <li><button class="button" type="button">Дизайн</button></li>
+            <li><button class="button" type="button">Маркетинг</button></li>
         </ul>
-        <ul>
+        <ul class="progects list">
             <li>
                 <img src="./images/project1.jpg" alt="технокряк веб сайт" width="370">
                 <h3>Технокряк</h3>
@@ -88,18 +92,18 @@
     </section>
 </main>
 <!--Подвал страницы-->
-<footer>
-    <a lang="en" href="./index.html">
-        WebStudio
+<footer class="footer">
+    <a class="footer-logo" lang="en" href="./index.html">
+       <span>Web</span>Studio
     </a>
     <address>
         г. Киев,
         пр-т Леси Украинки, 26,
     </address>
 
-    <ul>
-        <li><a href="mailto:info@example.com">info@example.com</a></li>
-        <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+    <ul class="footer-list">
+        <li><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
+        <li><a class="footer-contact-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
     </ul>
 </footer>
     

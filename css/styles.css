@@ -5,6 +5,8 @@
   --accessorial-text-color-transparency: #ffffff60;
   --accessorial-text-color: #ffffff;
   --accent-bg-color: #2f303a;
+  --portfolio-main-color: #e5e5e5;
+  --buttom-bg-color: #f5f4fa;
 }
 
 /* цвет героя background: #2F303A; */
@@ -68,6 +70,7 @@ body {
 }
 
 /* button */
+
 .hero-button {
   background-color: var(--accent-color);
   color: var(--accessorial-text-color);
@@ -121,4 +124,23 @@ body {
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: var(--accent-color);
+}
+
+/* portfolio */
+
+.main {
+  background-color: var(--accessorial-text-color);
+}
+
+/* button */
+.button {
+  background-color: var(--buttom-bg-color);
+  color: var(--main-text-color);
+  border-color: transparent;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--accessorial-text-color);
 }
