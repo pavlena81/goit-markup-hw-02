@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --accessorial-text-color-transparency: #ffffff60;
   --accessorial-text-color: #ffffff;
+  --logo-text-color: #000000;
   --accent-bg-color: #2f303a;
   --portfolio-main-color: #e5e5e5;
   --buttom-bg-color: #f5f4fa;
@@ -16,28 +17,28 @@
 /* основной цвет текста */
 body {
   font-family: 'Roboto', 'sans-serif';
-  letter-spacing: 0.03em;
-
   font-size: 14px;
-  line-height: 1.7;
 
-  color: #757575;
+  color: var(--paragraph-text-color);
 }
 
 .header {
-  background-color: #ffffff;
+  background-color: var(--accessorial-text-color);
 }
 /* site nav */
 
 /* logo */
 .logo {
   font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
+  font-size: 26px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
   text-decoration: none;
-  color: #000000;
+  color: var(--logo-text-color);
 }
 
-.logo > span {
+.logo-part {
   color: var(--accent-color);
 }
 
@@ -56,11 +57,10 @@ body {
 }
 
 .site-nav-link:hover,
-.site-nav-link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav-link .current {
+.site-nav-link:focus,
+.auth-nav-link:hover,
+.auth-nav-link:focus,
+.site-nav-link.current {
   color: var(--accent-color);
 }
 
@@ -70,12 +70,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--paragraph-text-color);
-}
 
-.auth-nav-link:hover,
-.auth-nav-link:focus {
-  color: var(--accent-color);
+  color: var(--paragraph-text-color);
 }
 
 /* hero */
@@ -89,8 +85,9 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  text-transform: uppercase;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
+
   color: #ffffff;
 }
 
@@ -102,6 +99,7 @@ body {
   line-height: 1.9;
   align-items: center;
   text-align: center;
+  letter-spacing: 0.06em;
 
   background-color: var(--accent-color);
   color: var(--accessorial-text-color);
@@ -116,12 +114,17 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
 
   color: var(--main-text-color);
 }
 
 /* features */
 .features-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
   color: var(--paragraph-text-color);
 }
 
@@ -131,6 +134,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
 
   color: var(--main-text-color);
 }
@@ -138,6 +142,12 @@ body {
 /* our team */
 .team {
   background-color: var(--buttom-bg-color);
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /* footer */
@@ -148,27 +158,26 @@ body {
 
 .footer-logo {
   text-decoration: none;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   color: var(--accessorial-text-color);
 }
-.footer-logo > span {
-  color: var(--accent-color);
-}
 
-.footer-link {
-  color: var(--accessorial-text-color-transparency);
-}
 .footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
-}
-
-.footer-contact-link {
-  color: var(--accessorial-text-color-transparency);
-}
-
+.footer-link:focus,
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: var(--accent-color);
+}
+
+.footer-link,
+.footer-contact-link {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--accessorial-text-color-transparency);
 }
 
 /* portfolio */
@@ -179,31 +188,46 @@ body {
 
 /* button */
 .button {
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  letter-spacing: 0.03em;
 
-  background-color: var(--buttom-bg-color);
-  color: var(--main-text-color);
   border-color: transparent;
 
   cursor: pointer;
 }
 
+.button.primary,
 .button:hover,
-.button:focus {
+.button:focus,
+.button.current {
   background-color: var(--accent-color);
   color: var(--accessorial-text-color);
 }
 
-.projects title {
+.button.secondary {
+  background-color: var(--buttom-bg-color);
+  color: var(--main-text-color);
+}
+
+.projects-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .projects-text {
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2;
 }
