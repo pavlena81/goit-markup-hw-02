@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --accessorial-text-color-transparency: #ffffff60;
   --accessorial-text-color: #ffffff;
+  --button-accent-color: #188ce8;
   --logo-text-color: #000000;
   --accent-bg-color: #2f303a;
   --portfolio-main-color: #e5e5e5;
@@ -101,7 +102,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 
-  background-color: var(--accent-color);
+  background-color: var(--button-accent-color);
   color: var(--accessorial-text-color);
   border-color: transparent;
 
@@ -129,8 +130,9 @@ body {
 }
 
 /* our work  and our team*/
-.work-title,
-.team-title {
+.features-title,
+.team,
+.work-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -144,10 +146,21 @@ body {
   background-color: var(--buttom-bg-color);
 }
 
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  color: var(--paragraph-text-color);
 }
 
 /* footer */
@@ -204,13 +217,19 @@ body {
 .button:hover,
 .button:focus,
 .button.current {
-  background-color: var(--accent-color);
+  background-color: var(--button-accent-color);
   color: var(--accessorial-text-color);
 }
 
 .button.secondary {
   background-color: var(--buttom-bg-color);
   color: var(--main-text-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--button-accent-color);
+  color: var(--accessorial-text-color);
 }
 
 .projects-title {
